@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard with Sidebar and Footer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <div class="d-flex flex-column min-vh-100">
+        <!-- Sidebar and Main Content Wrapper -->
+        <div class="d-flex flex-grow-1">
+            <!-- Sidebar -->
+            <div class="sidebar bg-dark text-white p-3" id="sidebar">
+                <button class="btn btn-outline-light mb-4" id="sidebarToggle">
+                    <i class="bi bi-list"></i>
+                </button>
+                <h2 class="text-center sidebar-title">My Dashboard</h2>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">
+                            <i class="bi bi-house-door-fill"></i> <span class="link-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">
+                            <i class="bi bi-bar-chart-fill"></i> <span class="link-text">Chart</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">
+                            <i class="bi bi-gear-fill"></i> <span class="link-text">Settings</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">
+                            <i class="bi bi-box-arrow-in-right"></i> <span class="link-text">Login</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">
+                            <i class="bi bi-box-arrow-right"></i> <span class="link-text">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Main Content -->
+            <div class="container-fluid p-4" id="mainContent">
+                <h1 class="text-center mb-4">Dashboard</h1>
+
+                <div class="row">
+                    <!-- Line Chart Card -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Sales Overview</h5>
+                                <canvas id="lineChart" width="200" height="70"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bar Chart Card -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Revenue by Product</h5>
+                                <canvas id="barChart" width="200" height="70"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pie Chart Card -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Market Share</h5>
+                                <canvas id="pieChart" width="100" height="70"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pie Chart Card -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Market Share</h5>
+                                <canvas id="pieChart" width="100" height="70"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pie Chart Card -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Market Share</h5>
+                                <canvas id="pieChart" width="100" height="70"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-light text-dark text-center py-3">
+            <p class="mb-0">&copy; 2024 <a href="http://github.com/bangale72/" target="_blank"> Bangale72.</a> All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <!-- Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>
