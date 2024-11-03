@@ -1,6 +1,7 @@
 # Dashboard with Collapsible Sidebar and Persistent Footer
 
-![Dashboard Form Screenshot](screenshot1.png, screenshot2.png)
+![Dashboard Form Screenshot](screenshot1.png)
+![Dashboard Form Screenshot](screenshot2.png)
 
 This project is a responsive web dashboard built with **HTML**, **CSS**, **Bootstrap**, and **JavaScript**. It features a sidebar with collapsible functionality, a persistent footer, and a selection of chart components created using **Chart.js**. The design is intended for a streamlined user experience, providing easy navigation, visual data representation, and adaptability across various screen sizes.
 
